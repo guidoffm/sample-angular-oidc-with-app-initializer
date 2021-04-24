@@ -1,0 +1,18 @@
+{
+  "authConfig": {
+    "issuer": "https://idsvr4.azurewebsites.net",
+    "clientId": "spa",
+    "scope": "openid profile email api offline_access",
+    "silentRefreshTimeout": 5000,
+    "useSilentRefresh": false,
+    "timeoutFactor": 0.1,
+    "responseType": "code",
+    "sessionChecksEnabled": true,
+    "showDebugInformation": true,
+    "clearHashAfterLogin": false,
+    "nonceStateSeparator": "semicolon",
+    "redirectUri": "/index.html",
+    "silentRefreshRedirectUri": "/silent-refresh.html"
+  },
+  "requiredGroup": ""
+}

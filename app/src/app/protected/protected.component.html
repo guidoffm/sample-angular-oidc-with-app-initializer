@@ -1,0 +1,40 @@
+<div class="container-fluid">
+    <div class="container-fluid mt-2">
+        <button type="button" (click)="callBackend()">Call the backend</button>
+    </div>
+    <div class="container-fluid mt-2">
+        <button type="button" (click)="refreshTokens()">Refresh Token</button>
+    </div>
+    <div class="container-fluid mt-2">
+        {{ backendResponseCode }}
+    </div>
+    <div class="container-fluid mt-2">
+        {{ backendResponseBody }}
+    </div>
+
+    <div class="container-fluid mt-2">
+
+        <table class="table table-bordered table-sm table-props">
+            <tr>
+                <th>HasValidToken</th>
+                <td><code id="hasValidToken">{{hasValidToken}}</code></td>
+            </tr>
+            <tr>
+                <th>IdentityClaims</th>
+                <td class="pre"><code id="identityClaims">{{identityClaims | json}}</code></td>
+            </tr>
+            <tr>
+                <th>RefreshToken</th>
+                <td><code class="break-all">{{refreshToken}}</code></td>
+            </tr>
+            <tr>
+                <th>AccessToken</th>
+                <td><code class="break-all">{{accessToken}}</code></td>
+            </tr>
+            <tr>
+                <th>IdToken</th>
+                <td><code class="break-all">{{idToken}}</code></td>
+            </tr>
+        </table>
+    </div>
+</div>

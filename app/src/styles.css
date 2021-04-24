@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+.authenticating-loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 5rem;
+    background: #fff;
+    opacity: 0.8;
+  }
+  
+  .pre {
+    white-space: pre;
+  }
+  
+  .break-all {
+    word-break: break-all;
+  }
+  
+  .table-props tr th {
+    width: 1px;
+  }
+  
