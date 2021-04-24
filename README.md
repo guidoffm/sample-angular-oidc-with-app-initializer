@@ -28,3 +28,6 @@ To start the app just run:
 
 The start configuration uses [proxy-local-conf.json](proxy-local-conf.json) to map 
 any request starting with `"/api"` to a backend running on `http://localhost:3000`. This is just for testing. Adjust the settings to map your own backend app there.
+
+You can find an example backend here:
+[https://github.com/guidoffm/sample-backend-for-angular-oidc-with-app-initializer](https://github.com/guidoffm/sample-backend-for-angular-oidc-with-app-initializer)
