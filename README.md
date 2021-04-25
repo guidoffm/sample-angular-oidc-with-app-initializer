@@ -1,6 +1,6 @@
 # sample-angular-oidc-with-app-initializer
 
-This is a sample project that uses Manfred Steyers' great library [angular-oauth2-oidc](https://github.com/manfredsteyer/angular-oauth2-oidc) to add OpenID Connect to an Angular project.
+This is a sample project that uses Manfred Steyer's great library [angular-oauth2-oidc](https://github.com/manfredsteyer/angular-oauth2-oidc) to add OpenID Connect to an Angular project.
 
 It uses the Angular [APP_INITIALIZER](https://angular.io/api/core/APP_INITIALIZER) to configure the authentication at runtime.
 
