@@ -11,14 +11,13 @@ jobs:
   build:
     env:
       IMAGE: guidoffm/sample-angular-oidc-with-app-initializer
-      TAG: $(date +%s)
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag $IMAGE:$TAG
+      run: docker build . --file Dockerfile --tag $IMAGE:{{ env.GITHUB_RUN_ID }}
     - name: Docker login
       run: docker login -u {{ secrets.DOCKER_USER }} -p {{ secrets.DOCKER_PWD }}
     - name: Docker push 
-      run: docker push $IMAGE:$TAG
+      run: docker push $IMAGE:{{ env.GITHUB_RUN_ID }}
