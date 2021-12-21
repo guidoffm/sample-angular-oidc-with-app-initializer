@@ -1,4 +1,4 @@
-FROM node:15 as builder
+FROM node:16 as builder
 RUN npm install -g @angular/cli
 WORKDIR /app
 #ADD app/package-lock.json .
