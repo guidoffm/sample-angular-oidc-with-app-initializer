@@ -31,4 +31,3 @@ any request starting with `"/api"` to a backend running on `http://localhost:300
 
 You can find an example backend here:
 [https://github.com/guidoffm/sample-backend-for-angular-oidc-with-app-initializer](https://github.com/guidoffm/sample-backend-for-angular-oidc-with-app-initializer)
-# altiros-kasse
